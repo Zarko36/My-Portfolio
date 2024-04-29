@@ -1,3 +1,8 @@
+/*  
+  Worked on by:
+  Joel Muniz - jmuni017
+  Isaac Castro - Isaac Castro - icast049 
+*/
 body {
   font-family: "Helvetica Neue";
   background-color: #87cefa;
@@ -10,15 +15,11 @@ h1 {
   font-size: 4em;
 }
 
-.whose_turn {
-  margin: 10px auto;
-  margin-bottom: 20px;
+h2 {
   text-align: center;
-  font-size: 1.5em;
 }
 
-/* Button: NewGame and Reset */
-.new_game, .reset {
+button {
   text-align:center;
   background-color: #ff8c00;
   color: #000000;
@@ -30,8 +31,23 @@ h1 {
   margin: 20px auto;
 }
 
-.new_game:hover, .reset {
+button:hover {
   background-color: orange;
+}
+
+.game_off {
+  cursor: default;
+}
+
+.hidden {
+  display: none;
+}
+
+.whose_turn {
+  margin: 10px auto;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .game_board {
@@ -56,12 +72,24 @@ h1 {
   position: relative;
 }
 
+.one.in_use, .two.in_use, .three.in_use, .four.in_use, .five.in_use, .six.in_use, .seven.in_use, .eight.in_use, .nine.in_use {
+  background-color: salmon;
+}
+
 .xo {
+  overflow: hidden;
   color: black;
   font-weight: bold;
   font-size: 8em;
   margin: 0 auto;
   position: absolute;
   width: 100%;
+  height: 100%;
   text-align: center;
+  cursor: default;
 }
+/*  
+  Worked on by:
+  Joel Muniz - jmuni017
+  Isaac Castro - Isaac Castro - icast049 
+*/
