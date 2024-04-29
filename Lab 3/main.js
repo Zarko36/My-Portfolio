@@ -1,6 +1,6 @@
 // Worked on by:
 // Joel Muniz - jmuni017
-// Isaac Castro - Isaac Castro - icast049
+// Isaac Castro - Isaac Castro - icast065
 document.addEventListener('DOMContentLoaded', () => {
     const menuOne = document.getElementById("menu_one");
     const gamemodeOneButton = document.querySelector(".gamemode_one");
@@ -170,4 +170,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // Worked on by:
 // Joel Muniz - jmuni017
-// Isaac Castro - Isaac Castro - icast049
+// Isaac Castro - Isaac Castro - icast065
