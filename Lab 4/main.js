@@ -1,3 +1,6 @@
+// Worked on by:
+// Joel Muniz - jmuni017
+// Isaac Castro - icast065
 const apiKey = 'eR7Di06MA1iLQ6NqE9LvlSnxTuKG1mUd';
 const apiUrlBase = 'https://api.nytimes.com/svc/mostpopular/v2/';
 const articleListElement = document.getElementById('article-list');
@@ -91,3 +94,6 @@ function updateFilters() {
 document.getElementById('filter-form').addEventListener('change', updateFilters);
 
 getArticles();
+// Worked on by:
+// Joel Muniz - jmuni017
+// Isaac Castro - icast065
