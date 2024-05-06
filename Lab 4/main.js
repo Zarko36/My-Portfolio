@@ -31,7 +31,7 @@ async function getArticles() {
         const response = await fetch(apiUrl);
         const data = await response.json();
         const articles = data.results;
-        // console.log(articles);
+        console.log(articles);
         renderArticles(articles);
     } catch (error) {
         console.error(error);

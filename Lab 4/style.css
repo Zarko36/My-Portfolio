@@ -10,8 +10,6 @@ body {
 }
 
 #article-list {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
     justify-content: center;
     
 }
@@ -63,15 +61,15 @@ body {
 @media (max-width: 900px) {
     .big-container {
        display: block;
-       text-align: left; /* add this */
+       text-align: left; 
      }
     #filter-form {
-       margin: 0 auto; /* add this */
+       margin: 0 auto; 
        padding-top: 10px;
        margin-bottom: 60px;
      }
     #article-list {
-       margin: 0 auto; /* add this */
+       margin: 0 auto; 
      }
    }
 
@@ -91,7 +89,7 @@ body {
 }
 
 .info-box-image {
-    width: 170px; /* adjust the width and height to your desired size */
+    width: 170px; 
     height: 100px;
     border-radius:10px;
     margin-right: 20px;
@@ -99,7 +97,7 @@ body {
   }
 
   .user-pfp {
-    width: 120px; /* adjust the width and height to your desired size */
+    width: 120px; 
     height: 120px;
     border-radius:10px;
     margin-right: 20px;
@@ -114,7 +112,7 @@ body {
 
 
 .article-content p {
-    flex: 1; /* make the abstraction take up the remaining space */
+    flex: 1;
 }
 
 ul {
@@ -125,7 +123,7 @@ ul {
 
 li {
     display: block;
-    margin-bottom: 10px; /* add some space between each option */
+    margin-bottom: 10px;
 }
 /*  
   Worked on by:
