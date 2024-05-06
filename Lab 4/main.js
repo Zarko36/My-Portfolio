@@ -28,6 +28,7 @@ async function getArticles() {
         const response = await fetch(apiUrl);
         const data = await response.json();
         const articles = data.results;
+        // console.log(articles);
         renderArticles(articles);
     } catch (error) {
         console.error(error);
@@ -36,14 +37,19 @@ async function getArticles() {
 
 function renderArticles(articles) {
     articleListElement.innerHTML = '';
-    articles.slice(0, 5).forEach((article) => {
+    articles.slice(0, 5).forEach((article, index) => {
         try {
             const articleElement = document.createElement('div');
             articleElement.className = 'article';
             articleElement.innerHTML = `
-                <h2>${article.title}</h2>
-                <p>${article.abstract}</p>
-                <p>${formatDate(article.published_date)}</p>
+                <div class="article-header">
+                    <h2>${index + 1}) ${article.title}</h2>
+                    <p class="published-date">${formatDate(article.published_date)}</p>
+                </div>
+                <div class="article-content">
+                    <img src="${article.media.length!== 0? article.media[0]["media-metadata"][0].url : ""}" alt="Ratatouille pfp" class="user-pfp">
+                    <p>${article.abstract}</p>
+                </div>
             `;
             articleListElement.appendChild(articleElement);
         } catch (error) {
@@ -59,8 +65,26 @@ function formatDate(dateString) {
 }
 
 function updateFilters() {
-    filters.timeFrame = document.getElementById('time-frame').value;
-    filters.sortBy = document.getElementById('sort-by').value;
+    const sortByRadioButtons = document.getElementsByName('sort-by');
+    let sortByValue;
+    for (const radioButton of sortByRadioButtons) {
+        if (radioButton.checked) {
+            sortByValue = radioButton.value;
+            break;
+        }
+    }
+
+    const timeFrameRadioButtons = document.getElementsByName('time-frame');
+    let timeFrameValue;
+    for (const radioButton of timeFrameRadioButtons) {
+        if (radioButton.checked) {
+            timeFrameValue = radioButton.value;
+            break;
+        }
+    }
+
+    filters.sortBy = sortByValue;
+    filters.timeFrame = timeFrameValue;
     getArticles();
 }
 

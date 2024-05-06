@@ -2,10 +2,6 @@
 
 This app displays the top 5 most popular articles from the New York Times based on time period (day, week, month) and popularity criteria (most viewed, shared, emailed).
 
-## External Libraries Used
-
-* Bootstrap for responsive design and styling
-
 ## Implementation Details
 
 * The app uses the NYT Popular Article API to fetch articles.

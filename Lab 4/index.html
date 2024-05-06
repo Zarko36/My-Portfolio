@@ -1,99 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Article List</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Times Popular Articles</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="big-container">
-        <div class="filter-box">
+        <form id="filter-form">
             <h2>Filter</h2>
-            <h3>Sort By:</h3>
+            <label for="sort-by">Sort By:</label>
             <ul>
                 <li>
-                    <input type="radio" id="most-viewed" name="sort-by">
-                    <label for="most-viewed">Most Viewed</label>
+                    <label>
+                        <input type="radio" id="sort-by-viewed" name="sort-by" value="viewed" checked>
+                        Most Viewed
+                    </label>
                 </li>
                 <li>
-                    <input type="radio" id="most-shared" name="sort-by">
-                    <label for="most-shared">Most Shared</label>
+                    <label>
+                        <input type="radio" id="sort-by-shared" name="sort-by" value="shared">
+                        Most Shared
+                    </label>
                 </li>
                 <li>
-                    <input type="radio" id="most-emailed" name="sort-by">
-                    <label for="most-emailed">Most Emailed</label>
+                    <label>
+                        <input type="radio" id="sort-by-emailed" name="sort-by" value="emailed">
+                        Most Emailed
+                    </label>
                 </li>
             </ul>
-            <h3>Time Frame:</h3>
+            <br>
+            <label for="time-frame">Time Frame:</label>
             <ul>
                 <li>
-                    <input type="radio" id="day" name="time-frame">
-                    <label for="day">Day</label>
+                    <label>
+                        <input type="radio" id="time-frame-1" name="time-frame" value="1" checked>
+                        Day
+                    </label>
                 </li>
                 <li>
-                    <input type="radio" id="week" name="time-frame">
-                    <label for="week">Week</label>
+                    <label>
+                        <input type="radio" id="time-frame-7" name="time-frame" value="7">
+                        Week
+                    </label>
                 </li>
                 <li>
-                    <input type="radio" id="month" name="time-frame">
-                    <label for="month">Month</label>
+                    <label>
+                        <input type="radio" id="time-frame-30" name="time-frame" value="30">
+                        Month
+                    </label>
                 </li>
             </ul>
-        </div>
-        <div class="info-boxes">
-            <div class="info-box">
-                <div class="info-box-title">
-                    <h4>Dummy title</h4>
-                    <p>Dummy date</p>
-                </div>
-                <div class="info-box-details">
-                    <img src="books.jpeg" alt="Image" class="info-box-image">
-                    <p>Dummy description</p>
-                </div>
-            </div>
-            <div class="info-box">
-                <div class="info-box-title">
-                    <h4>Dummy title</h4>
-                    <p>Dummy date</p>
-                </div>
-                <div class="info-box-details">
-                    <img src="books.jpeg" alt="Image" class="info-box-image">
-                    <p>Dummy description</p>
-                </div>
-            </div>
-            <div class="info-box">
-                <div class="info-box-title">
-                    <h4>Dummy title</h4>
-                    <p>Dummy date</p>
-                </div>
-                <div class="info-box-details">
-                    <img src="books.jpeg" alt="Image" class="info-box-image">
-                    <p>Dummy description</p>
-                </div>
-            </div>
-            <div class="info-box">
-                <div class="info-box-title">
-                    <h4>Dummy title</h4>
-                    <p>Dummy date</p>
-                </div>
-                <div class="info-box-details">
-                    <img src="books.jpeg" alt="Image" class="info-box-image">
-                    <p>Dummy description</p>
-                </div>
-            </div>
-            <div class="info-box">
-                <div class="info-box-title">
-                    <h4>Dummy title</h4>
-                    <p>Dummy date</p>
-                </div>
-                <div class="info-box-details">
-                    <img src="books.jpeg" alt="Image" class="info-box-image">
-                    <p>Dummy description</p>
-                </div>
-            </div>
-        </div>
+        </form>
+        <section id="article-list">
+            <!-- articles will be rendered here -->
+        </section>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
