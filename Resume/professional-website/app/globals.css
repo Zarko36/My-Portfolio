@@ -26,6 +26,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+canvas {
+  height:50vh !important;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
