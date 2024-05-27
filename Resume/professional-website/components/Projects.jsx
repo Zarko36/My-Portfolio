@@ -30,7 +30,7 @@ const Project = ({ pname, techStack, description, image }) => {
           scale: 1.025,
           transition: { type: "spring", stiffness: 100 },
         }}
-        className="bg-neutral-900 hover:border hover:border-gray-300 hover:border-4 hover:shadow-2xl hover:shadow-teal-300 rounded-xl p-4 flex flex-col md:flex-row md:items-center md:justify-between w-full"
+        className="bg-gradient-to-b from-neutral-900 to-neutral-700 hover:border hover:border-gray-300 hover:border-4 hover:shadow-2xl hover:shadow-teal-300 rounded-xl p-4 flex flex-col md:flex-row md:items-center md:justify-between w-full"
       >
         <div className="ml-4 flex flex-col w-1/2">
             <h2 className="text-xl text-white font-semibold mb-2">{pname}</h2>

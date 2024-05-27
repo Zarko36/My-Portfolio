@@ -8,7 +8,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-neutral-900 z-10">
+    <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-neutral-900 to-neutral-700 z-10">
       <div className="flex justify-between items-center p-4">
         <div className="w-1/5">
           {/* Empty div for spacing */}

@@ -27,7 +27,7 @@ const Experience = ({ title, location, description, from, to }) => {
           scale: 1.025,
           transition: { type: "spring", stiffness: 100 },
         }}
-        className="justify-center bg-neutral-900 hover:border hover:border-gray-300 hover:border-4 hover:shadow-2xl hover:shadow-teal-300 text-white p-8 rounded-lg shadow-lg mb-8 w-2/3"
+        className="justify-center bg-gradient-to-b from-neutral-900 to-neutral-700 hover:border hover:border-gray-300 hover:border-4 hover:shadow-2xl hover:shadow-teal-300 text-white p-8 rounded-lg shadow-lg mb-8 w-2/3"
       >
         <h2 className="text-2xl font-bold mb-2">{title}</h2>
         <p className="text-neutral-200 mb-2">{location}</p>

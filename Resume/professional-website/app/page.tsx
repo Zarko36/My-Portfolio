@@ -53,7 +53,7 @@ const Home = () => {
             scale: 1.025,
             transition: { type: "spring", stiffness: 100 },
           }}
-          className="bg-neutral-900 hover:border hover:border-gray-300 hover:border-4 hover:shadow-2xl hover:shadow-teal-300 rounded-xl"
+          className="bg-gradient-to-b from-neutral-500 to-neutral-900 hover:border hover:border-gray-300 hover:border-4 hover:shadow-2xl hover:shadow-teal-300 rounded-xl"
         >
           <Canvas camera={{ position: [0, 0, 7.5], near: 0.1, far: 1000 }}>
             <ambientLight />

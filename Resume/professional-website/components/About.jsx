@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-
 const animate = {
   start: {
     opacity: 0,
@@ -14,7 +13,6 @@ const animate = {
 };
 
 const About = () => {
-
   return (
     <div className="flex flex-col justify-center items-center mt-20">
       <div className="w-2/3">
@@ -31,7 +29,7 @@ const About = () => {
               scale: 1.025,
               transition: { type: "spring", stiffness: 100 },
             }}
-            className="flex flex-col items-center justify-center w-full bg-neutral-900 hover:shadow-2xl hover:shadow-teal-300 hover:border-4 hover:border-gray-300 rounded-xl p-8"
+            className="flex flex-col items-center justify-center w-full bg-gradient-to-b from-neutral-900 to-neutral-700 hover:shadow-2xl hover:shadow-teal-300 hover:border-4 hover:border-gray-300 rounded-xl p-8"
           >
             <div className="w-full">
               <h2 className="text-xl text-white font-semibold mb-2">Background</h2>
