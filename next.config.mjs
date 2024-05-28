@@ -5,6 +5,13 @@ const nextConfig = {
     // images: {
     //     unoptimized: true,
     // }
+    webpack: (config, options) => {
+        config.module.rules.push({
+            test: /.pdf$/i,
+            type: 'asset/resource',
+        })
+        return config
+    },
 };
 
 export default nextConfig;

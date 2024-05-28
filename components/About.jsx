@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Resume from '@/components/resume.pdf';
 
 const animate = {
   start: {
@@ -49,11 +50,18 @@ const About = () => {
                 My career goal is to work as a software engineer in a fast-paced and innovative tech company. I am particularly interested in working on projects that involve machine learning and artificial intelligence.
               </p>
             </div>
-            <button
+            {/* <button
               className="text-neutral-200 hover:text-white underline"
             >
               Download Resume
-            </button>
+            </button> */}
+            <a
+              href={Resume} // replace with the URL of your resume if it's hosted online
+              target="_blank"
+              className="text-neutral-200 hover:text-white underline"
+            >
+              My Resume
+            </a>
           </motion.div>
         </motion.div>
       </div>
