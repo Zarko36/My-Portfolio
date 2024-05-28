@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Resume from '@/components/resume.pdf';
+import Resume from '../components/Resume.pdf';
 
 const animate = {
   start: {
