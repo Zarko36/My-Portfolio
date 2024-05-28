@@ -30,7 +30,7 @@ const Education = () => {
               scale: 1.025,
               transition: { type: "spring", stiffness: 100 },
             }}
-            className="bg-gradient-to-b from-neutral-900 to-neutral-700 hover:border hover:border-gray-300 hover:border-4 hover:shadow-2xl hover:shadow-teal-300 text-white p-8 rounded-lg shadow-lg w-1/2"
+            className="bg-gradient-to-b from-neutral-900 to-neutral-700 hover:border hover:border-gray-300 hover:border-4 hover:shadow-2xl hover:shadow-teal-300 text-white p-8 rounded-lg shadow-lg w-full"
           >
             <div className="flex">
               <div className="w-1/5">
