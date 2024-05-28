@@ -27,7 +27,8 @@ body {
 }
 
 canvas {
-  height:50vh !important;
+  height:60vh !important;
+  width: 120vh !important;
 }
 
 @layer utilities {
